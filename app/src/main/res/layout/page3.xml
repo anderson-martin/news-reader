@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0pt">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="@color/purple"
+        android:elevation="4dp"
+        android:paddingTop="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/titleChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            tools:text="CHANNEL" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/artcle_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_article_header"
+                android:gravity="bottom"
+                android:paddingBottom="5pt"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Arctic sea ice extent hits record low for winter maximum"
+                android:textColor="@color/white" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50px">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5pt"
+                            android:src="@drawable/icon_list_source" />
+
+                        <TextView
+                            android:id="@+id/agency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            tools:text="Agency" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5pt"
+                            android:src="@drawable/icon_list_time" />
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            tools:text="Date" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            tools:text="Tag"
+/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                tools:text="Body text" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

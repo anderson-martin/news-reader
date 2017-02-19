@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for a single list item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    >
+
+    <TextView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+        android:textColor="@color/black"
+/>
+    <TextView
+        android:id="@+id/headlineIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="7pt"
+        android:layout_marginBottom="7pt">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20pt"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5pt"
+                android:src="@drawable/icon_list_source" />
+
+            <TextView
+                android:id="@+id/agency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Agency"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5pt"
+                android:src="@drawable/icon_list_time"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="Date"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

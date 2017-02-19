@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pictureChannel"
+    android:layout_width="match_parent"
+    android:layout_height="100pt"
+    android:layout_margin="0px"
+    android:background="@drawable/thumbnail_3x_science"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scaleType="fitXY"
+    android:stretchMode="columnWidth">
+
+
+
+    <TextView
+        android:id="@+id/titleChannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        tools:text="Science Channel" />
+
+    <Button
+        android:id="@+id/button_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="17pt"
+        android:layout_marginTop="15pt"
+        android:layout_marginBottom="15pt"
+        android:background="@drawable/rectangle_filled"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:text="@string/following" />
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        tools:text="@string/nfollowers" />
+
+</LinearLayout>
+
+
+
