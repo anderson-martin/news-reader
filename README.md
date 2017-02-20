@@ -9,6 +9,7 @@ This Minimum Viable Product is an Android based news-reader. For this project, I
 * Gridview with custom adapter
 * Listview with custom adapter
 
+I have done this project by means of Android Studio.
 
 Flexible splash page which appears to user just for loading time, without any extra delay.
 
